@@ -1,8 +1,5 @@
 <?php
-$module = $_GET['op'];
+include "classes/Routes.php";
+$routes = new Routes();
 
-if(empty($module)) {
-    $module = 'main';
-}
-
-include "views/$module/app.php";
+include $routes->init();

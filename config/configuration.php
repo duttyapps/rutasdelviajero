@@ -10,3 +10,6 @@ $database->host = 'localhost';
 $database->username = 'root';
 $database->password = 'carlitos';
 $database->db = 'rutas';
+
+include 'classes/MysqliDb.php';
+$db = new MysqliDb($database->host, $database->username, $database->password, $database->db);
