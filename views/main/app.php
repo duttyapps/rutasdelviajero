@@ -50,60 +50,57 @@ $total_slider = count($ad->getAdsSlider());
             </div>
         </div>
     </div>
-    <div class="container-fluid ns-pd">
+    <div class="container-fluid ns-pd bgw">
         <div class="row">
-            <div class="col-xs-6 col-lg-2"><a href="#"><img src="./assets/img/sect.jpg" class="img-responsive"></a></div>
-            <div class="col-xs-6 col-lg-2"><a href="#"><img src="./assets/img/sect.jpg" class="img-responsive"></a></div>
-            <div class="col-xs-6 col-lg-2"><a href="#"><img src="./assets/img/sect.jpg" class="img-responsive"></a></div>
-            <div class="col-xs-6 col-lg-2"><a href="#"><img src="./assets/img/sect.jpg" class="img-responsive"></a></div>
-            <div class="col-xs-6 col-lg-2"><a href="#"><img src="./assets/img/sect.jpg" class="img-responsive"></a></div>
-            <div class="col-xs-6 col-lg-2"><a href="#"><img src="./assets/img/sect.jpg" class="img-responsive"></a></div>
+            <div class="col-xs-6 col-lg-2">
+                <a href="#">
+                    <img src="./assets/img/categories/s/1.jpg" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-2">
+                <a href="#">
+                    <img src="./assets/img/categories/s/2.jpg" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-2">
+                <a href="#">
+                    <img src="./assets/img/categories/s/3.jpg" class="img-responsive shine">
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-2">
+                <a href="#">
+                    <img src="./assets/img/categories/s/4.jpg" class="img-responsive shine">
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-2">
+                <a href="#">
+                    <img src="./assets/img/categories/s/5.jpg" class="img-responsive shine">
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-2">
+                <a href="#">
+                    <img src="./assets/img/categories/s/6.jpg" class="img-responsive shine">
+                </a>
+            </div>
         </div>
     </div>
     <div id="sec-cat" class="ns-pd">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-6 col-lg-3">
-                    <div class="panel panel-rutas">
-                        <div class="panel-heading shadowed bg-nacionales">
-                            Paquetes Nacionales
-                        </div>
-                        <div class="panel-body">
-                            <img src="./assets/img/sect_2.jpg" class="img-responsive">
-                        </div>
-                    </div>
+                    <img src="./assets/img/categories/i/nacional.jpg" class="img-responsive shdw-a">
+                </div>
+                <div class="col-xs-6 col-lg-3">
+                    <img src="./assets/img/categories/i/internacional.jpg" class="img-responsive shdw-a">
+                </div>
+                <div class="col-xs-6 col-lg-3">
+                    <img src="./assets/img/categories/i/ofertas.jpg" class="img-responsive shdw-a">
                 </div>
                 <div class="col-xs-6 col-lg-3">
                     <div class="panel panel-rutas">
-                        <div class="panel-heading shadowed bg-internacionales">
-                            Paquetes Internacionales
-                        </div>
-                        <div class="panel-body">
-                            <img src="./assets/img/sect_2.jpg" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-lg-3">
-                    <div class="panel panel-rutas">
-                        <div class="panel-heading shadowed bg-ofertas">
-                            Paquetes en Oferta
-                        </div>
-                        <div class="panel-body">
-                            <img src="./assets/img/sect_2.jpg" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-lg-3">
-                    <div class="panel panel-rutas">
-                        <div class="panel-heading shadowed bg-confirmadas">
-                            Salidas Confirmadas
-                        </div>
-                        <div class="panel-body">
-                            <img src="./assets/img/sect_2.jpg" class="img-responsive">
-                        </div>
+                        <img src="./assets/img/categories/i/caribe.jpg" class="img-responsive shdw-a">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>

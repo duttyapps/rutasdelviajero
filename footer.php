@@ -10,7 +10,7 @@ $social = new Social($db);
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <div class="banner-bottom">
+            <div class="banner-bottom ns-pd-2">
                 <a href="<?php echo $banner['LINK']; ?>" target="<?php echo $banner['TARGET']; ?>">
                     <img src="./assets/img/publi/<?php echo $banner['ID']; ?>.jpg"
                          alt="<?php echo $banner['TITULO']; ?>" class="img-responsive">
@@ -23,7 +23,11 @@ $social = new Social($db);
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-4">
-                sad
+                <ul>
+                    <li>Nosotros</li>
+                    <li>Testimonios Clientes</li>
+                    <li>Blog</li>
+                </ul>
             </div>
             <div class="col-sm-12 col-lg-4">
                 <div id="social-section">
@@ -63,7 +67,7 @@ $social = new Social($db);
     </div>
     </div>
 </section>
-<div class="container">
+<div class="container copy">
     <p class="text-center">&copy; <?php echo date('Y'); ?> RutasDelViajero, todos los derechos reservados.</p>
 </div>
 </body>

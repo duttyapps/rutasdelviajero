@@ -7,7 +7,7 @@
             <div class="col-xs-6 col-lg-6">
                 <div class="radio">
                     <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        <input type="radio" name="rd_tipo" id="rd_idavuelta" value="1" checked>
                         Ida/Vuelta
                     </label>
                 </div>
@@ -15,7 +15,7 @@
             <div class="col-xs-6 col-lg-6">
                 <div class="radio">
                     <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                        <input type="radio" name="rd_tipo" id="rd_ida" value="2">
                         Solo Ida
                     </label>
                 </div>
@@ -24,23 +24,23 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Origen</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ej. Aeropuerto Internacional Jorge Chavez">
+                    <label for="input-origen">Origen</label>
+                    <input type="text" class="form-control" id="input-origen" placeholder="Ej. Aeropuerto Internacional Jorge Chavez" data-provide="typeahead" autocomplete="off">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Destino</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ej. Aeropuerto Internacional Alejandro Velasco Astete">
+                    <label for="input-destino">Destino</label>
+                    <input type="text" class="form-control" id="input-destino" placeholder="Ej. Aeropuerto Internacional Alejandro Velasco Astete" data-provide="typeahead" autocomplete="off">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Fecha de Ida</label>
-                    <div class="input-group date" data-provide="datepicker">
-                        <input type="text" class="form-control">
+                    <label for="fecha_ida">Fecha de Ida</label>
+                    <div class="input-group date">
+                        <input type="text" class="form-control" id="fecha_ida" value="<?php echo date('d/m/Y');?>">
                         <div class="input-group-addon">
                             <span class="glyphicon glyphicon-th"></span>
                         </div>
@@ -49,9 +49,9 @@
             </div>
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Fecha de Regreso</label>
-                    <div class="input-group date" data-provide="datepicker">
-                        <input type="text" class="form-control">
+                    <label for="fecha_regreso">Fecha de Regreso</label>
+                    <div class="input-group date">
+                        <input type="text" class="form-control" id="fecha_regreso" value="<?php echo date('d/m/Y', strtotime('tomorrow'));?>">
                         <div class="input-group-addon">
                             <span class="glyphicon glyphicon-th"></span>
                         </div>
@@ -63,7 +63,7 @@
             <div class="col-lg-6">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Pasajeros</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" class="form-control" id="exampleInputEmail1">
                 </div>
             </div>
             <div class="col-lg-6">

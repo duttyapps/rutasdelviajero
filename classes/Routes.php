@@ -22,14 +22,14 @@ class Routes
             if (count($routes) == 1) {
                 $result = $this->includeIfExists("../views/$routes[0]/app.php");
                 if ($result == false) {
-                    die("Not found.");
+                    header("location: /not_found");
                 } else {
                     return $result;
                 }
             } else {
                 $result = $this->includeIfExists("views$base_url/app.php");
                 if ($result == false) {
-                    die("Not found.");
+                    header("location: /not_found");
                 } else {
                     return $result;
                 }

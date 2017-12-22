@@ -5,6 +5,7 @@
 html, body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    background-color: #f2f2f2;
 }
 
 #top-contact {
@@ -12,8 +13,13 @@ html, body {
     text-align: right;
 }
 
+#carouselAds {
+    z-index: 0;
+}
+
 .navbar {
     border: 0;
+    z-index: 1;
 }
 
 .navbar-rutas {
@@ -37,6 +43,7 @@ html, body {
 .navbar-rutas .navbar-nav > li > a {
     color: #fff;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .navbar-rutas .navbar-nav > li > a:hover,
@@ -83,44 +90,44 @@ html, body {
     background-color: #0074BF;
 }
 
-.dropdown-menu {
-    width: 100%;
+.navbar-rutas .dropdown-menu {
+    min-width: 100%;
     background-color: #0074BF;
     border: 0;
 }
 
-.dropdown-menu>li>a {
+.navbar-rutas .dropdown-menu > li > a {
     color: #fff;
 }
 
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
+.navbar-rutas .dropdown-menu > li > a:hover,
+.navbar-rutas .dropdown-menu > li > a:focus {
     color: #fff;
     text-decoration: none;
     background-color: #009EE3;
 }
 
 @media (max-width: 767px) {
-    .navbar-rutas .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-rutas .navbar-nav .open .navbar-rutas .dropdown-menu > li > a {
         color: #fff;
     }
 
-    .navbar-rutas .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-rutas .navbar-nav .open .dropdown-menu > li > a:focus {
+    .navbar-rutas .navbar-nav .open .navbar-rutas .dropdown-menu > li > a:hover,
+    .navbar-rutas .navbar-nav .open .navbar-rutas .dropdown-menu > li > a:focus {
         color: #333;
         background-color: transparent;
     }
 
-    .navbar-rutas .navbar-nav .open .dropdown-menu > .active > a,
-    .navbar-rutas .navbar-nav .open .dropdown-menu > .active > a:hover,
-    .navbar-rutas .navbar-nav .open .dropdown-menu > .active > a:focus {
+    .navbar-rutas .navbar-nav .open .navbar-rutas.dropdown-menu > .active > a,
+    .navbar-rutas .navbar-nav .open .navbar-rutas.dropdown-menu > .active > a:hover,
+    .navbar-rutas .navbar-nav .open .navbar-rutas.dropdown-menu > .active > a:focus {
         color: #555;
         background-color: #e7e7e7;
     }
 
-    .navbar-rutas .navbar-nav .open .dropdown-menu > .disabled > a,
-    .navbar-rutas .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-    .navbar-rutas .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    .navbar-rutas .navbar-nav .open .navbar-rutas.dropdown-menu > .disabled > a,
+    .navbar-rutas .navbar-nav .open .navbar-rutas.dropdown-menu > .disabled > a:hover,
+    .navbar-rutas .navbar-nav .open .navbar-rutas.dropdown-menu > .disabled > a:focus {
         color: #ccc;
         background-color: transparent;
     }
@@ -167,7 +174,6 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 
 .panel-form {
     border: 1px solid #FF8728;
-    border-radius: 14px;
     background-color: #FF8728;
 }
 
@@ -190,18 +196,22 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 .panel-rutas {
     border-color: #ddd;
 }
+
 .panel-rutas > .panel-heading {
     color: #fff;
     background-color: transparent;
     border: 0;
 }
+
 .panel-rutas > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #ddd;
 }
+
 .panel-rutas > .panel-heading .badge {
     color: #f5f5f5;
     background-color: #333;
 }
+
 .panel-rutas > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ddd;
 }
@@ -240,6 +250,21 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 
 .shadowed {
     text-shadow: 2px 2px 2px #111;
+}
+
+.typeahead {
+    width: auto;
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.typeahead > .a {
+    color: #111;
+}
+
+.typeahead > .active > a {
+    color: #111;
+    background-color: #ddd;
 }
 
 .spn-1 {
@@ -291,7 +316,17 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 }
 
 #main-content .ns-pd {
-    /*margin-top: 3%;*/
+    margin-top: 1%;
+}
+
+.ns-pd-2 {
+    margin-top: 2%;
+}
+
+.bgw {
+    background-color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #sec-cat {
@@ -300,8 +335,19 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 
 #footer {
     margin-top: 3%;
-    padding: 3%;
+    padding: 3% 0;
     font-size: 16px;
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+.shdw-a {
+
+}
+
+.copy {
+    padding: 1.5%;
+    font-weight: 600;
 }
 
 .banner-bottom {
@@ -311,6 +357,51 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 
 .banner-bottom > a > img {
     display: inline;
+}
+
+/* Shine */
+.shine {
+    position: relative;
+}
+
+.shine::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+.shine:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+
+.line {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 1px;
+    float: left;
+    margin: 15px 0;
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
 }
 
 @media (min-width: 1200px) {

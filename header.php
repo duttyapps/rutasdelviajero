@@ -24,16 +24,13 @@ $menu = new Header($db);
             crossorigin="anonymous"></script>
     <script src="assets/js/externals/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/externals/locale/bootstrap-datepicker.es.min.js"></script>
-
-    <script>
-        $.fn.datepicker.defaults.format = "dd/mm/yyyy";
-        $.fn.datepicker.defaults.language = "es";
-    </script>
+    <script src="assets/js/externals/bootstrap3-typeahead.min.js"></script>
+    <script src="assets/js/all.js"></script>
 </head>
 <body>
 <div id="top-contact" class="hidden-xs">
     <div class="container-fluid">
-        963 593 175
+        &nbsp;
     </div>
 </div>
 <nav class="navbar navbar-rutas">

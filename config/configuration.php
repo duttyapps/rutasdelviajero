@@ -11,5 +11,9 @@ $database->username = 'root';
 $database->password = 'carlitos';
 $database->db = 'rutas';
 
-include 'classes/MysqliDb.php';
+if(file_exists('classes/MysqliDb.php')) {
+    include 'classes/MysqliDb.php';
+} else {
+    include '../../classes/MysqliDb.php';
+}
 $db = new MysqliDb($database->host, $database->username, $database->password, $database->db);
