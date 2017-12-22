@@ -6,6 +6,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     background-color: #f2f2f2;
+    color: #06508B;
 }
 
 #top-contact {
@@ -23,11 +24,16 @@ html, body {
 }
 
 .navbar-rutas {
-    background-color: #009EE3;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
 }
 
 .navbar-rutas .navbar-brand {
     color: #777;
+    height: inherit;
+    padding: 10px 15px;
 }
 
 .navbar-rutas .navbar-brand:hover,
@@ -40,15 +46,34 @@ html, body {
     color: #777;
 }
 
+.navbar-rutas .navbar-nav {
+    position: relative;
+    top: 35px;
+}
+
+.navbar-rutas .navbar-nav > li {
+    border-right: 1px solid rgba(0,0,0,0.08);
+    padding: 0;
+}
+
+.navbar-rutas .navbar-nav > li:last-child {
+    border-right: 0;
+}
+
 .navbar-rutas .navbar-nav > li > a {
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: #06508B;
+    padding: 5px 20px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    -ms-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
 }
 
 .navbar-rutas .navbar-nav > li > a:hover,
 .navbar-rutas .navbar-nav > li > a:focus {
-    background-color: #0074BF;
+    background-color: transparent;
+    border-bottom: 3px solid #002a80;
 }
 
 .navbar-rutas .navbar-nav > .active > a,
@@ -76,6 +101,10 @@ html, body {
 
 .navbar-rutas .navbar-toggle .icon-bar {
     background-color: #888;
+}
+
+.navbar-rutas .navbar-collapse {
+    text-align: center;
 }
 
 .navbar-rutas .navbar-collapse,
@@ -157,14 +186,19 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
     color: #ccc;
 }
 
+.navbar-center {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
 .panel {
     border-radius: 0;
     border: 0;
 }
 
 .panel-heading {
-    font-family: 'Kalam', cursive;
-    font-size: 1.5em;
+    font-size: 1.1em;
     border-radius: 0;
 }
 
@@ -173,12 +207,12 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 }
 
 .panel-form {
-    border: 1px solid #FF8728;
-    background-color: #FF8728;
+    border: 1px solid #ddd;
+    background-color: #FFD347;
 }
 
 .panel-form > .panel-heading {
-    color: #fff;
+    color: #06508B;
     background-color: transparent;
     border: 0;
 }
@@ -186,11 +220,13 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 .panel-form > .panel-body {
     display: inline-block;
     padding: 1% 2%;
-    color: #fff;
+    color: #06508B;
+    font-size: 12px;
 }
 
 .panel-form > .panel-body .form-control {
-    border: 0;
+    height: 30px;
+    font-size: 12px;
 }
 
 .panel-rutas {
@@ -278,7 +314,7 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 
 .list-social > li {
     display: inline;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
 .list-social > li:last-child {
@@ -312,7 +348,7 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 }
 
 #main-content {
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 #main-content .ns-pd {
@@ -337,8 +373,8 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
     margin-top: 3%;
     padding: 3% 0;
     font-size: 16px;
-    background-color: #333333;
-    color: whitesmoke;
+    background-color: white;
+    color: #111;
 }
 
 .shdw-a {
@@ -392,6 +428,19 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
     margin: 15px 0;
 }
 
+.br {
+    display: table-cell;
+    border-right: 1px solid rgba(0,0,0,0.08);
+}
+
+.br:last-child {
+    border-right: 0;
+}
+
+.flex {
+    display: flex;
+}
+
 @-webkit-keyframes shine {
     100% {
         left: 125%;
@@ -406,8 +455,6 @@ fieldset[disabled] .navbar-rutas .btn-link:focus {
 
 @media (min-width: 1200px) {
     .navbar-rutas .navbar-brand {
-        top: -50px;
-        position: relative;
     }
 }
 

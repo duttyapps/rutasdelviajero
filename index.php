@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Lima');
 include 'config/configuration.php';
 include 'lib/database.class.php';
 include "lib/configuration.class.php";

@@ -25,14 +25,15 @@ $menu = new Header($db);
     <script src="assets/js/externals/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/externals/locale/bootstrap-datepicker.es.min.js"></script>
     <script src="assets/js/externals/bootstrap3-typeahead.min.js"></script>
+    <script src="assets/js/externals/wow.min.js"></script>
     <script src="assets/js/all.js"></script>
 </head>
 <body>
-<div id="top-contact" class="hidden-xs">
+<!--div id="top-contact" class="hidden-xs">
     <div class="container-fluid">
         &nbsp;
     </div>
-</div>
+</div-->
 <nav class="navbar navbar-rutas">
     <div class="container">
         <div class="navbar-header">
@@ -44,11 +45,11 @@ $menu = new Header($db);
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img src="./assets/img/logo-small-bordered.png" class="rubberBand animated">
+                <img src="./assets/img/logo-small.png" class="wow rubberBand">
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right fadeIn animated">
+            <ul class="nav navbar-nav navbar-center wow fadeIn">
                 <?php
                 foreach ($menu->getListMenu() as $key) {
                     $submenu = $menu->getListSubMenu($key["ID"]);

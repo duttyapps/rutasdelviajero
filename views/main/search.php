@@ -31,7 +31,7 @@
             <div class="col-lg-6">
                 <div class="form-group">
                     <label for="input-destino">Destino</label>
-                    <input type="text" class="form-control" id="input-destino" placeholder="Ej. Aeropuerto Internacional Alejandro Velasco Astete" data-provide="typeahead" autocomplete="off">
+                    <input type="text" class="form-control" id="input-destino" placeholder="Ej. Nueva York" data-provide="typeahead" autocomplete="off">
                 </div>
             </div>
         </div>

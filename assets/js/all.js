@@ -3,6 +3,8 @@
  */
 $(document).ready(function() {
 
+    new WOW().init();
+
     $.fn.datepicker.defaults.format = "dd/mm/yyyy";
     $.fn.datepicker.defaults.language = "es";
 

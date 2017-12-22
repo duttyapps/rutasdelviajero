@@ -2,13 +2,13 @@
 $total_slider = count($ad->getAdsSlider());
 ?>
 <section id="main-content">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-5 col-sm-12">
                 <?php include 'search.php'; ?>
             </div>
-            <div class="col-lg-6 col-sm-12">
-                <div id="carouselAds" class="carousel slide bounceIn animated" data-ride="carousel">
+            <div class="col-lg-7 col-sm-12">
+                <div id="carouselAds" class="carousel slide wow bounceIn" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <?php
                         for ($i = 0; $i < $total_slider; $i++) {
@@ -50,42 +50,44 @@ $total_slider = count($ad->getAdsSlider());
             </div>
         </div>
     </div>
-    <div class="container-fluid ns-pd bgw">
-        <div class="row">
-            <div class="col-xs-6 col-lg-2">
-                <a href="#">
-                    <img src="./assets/img/categories/s/1.jpg" class="img-responsive">
-                </a>
-            </div>
-            <div class="col-xs-6 col-lg-2">
-                <a href="#">
-                    <img src="./assets/img/categories/s/2.jpg" class="img-responsive">
-                </a>
-            </div>
-            <div class="col-xs-6 col-lg-2">
-                <a href="#">
-                    <img src="./assets/img/categories/s/3.jpg" class="img-responsive shine">
-                </a>
-            </div>
-            <div class="col-xs-6 col-lg-2">
-                <a href="#">
-                    <img src="./assets/img/categories/s/4.jpg" class="img-responsive shine">
-                </a>
-            </div>
-            <div class="col-xs-6 col-lg-2">
-                <a href="#">
-                    <img src="./assets/img/categories/s/5.jpg" class="img-responsive shine">
-                </a>
-            </div>
-            <div class="col-xs-6 col-lg-2">
-                <a href="#">
-                    <img src="./assets/img/categories/s/6.jpg" class="img-responsive shine">
-                </a>
+    <div class="ns-pd bgw">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-xs-6 col-lg-2">
+                    <a href="#">
+                        <img src="./assets/img/categories/s/1.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-2">
+                    <a href="#">
+                        <img src="./assets/img/categories/s/2.jpg" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-2">
+                    <a href="#">
+                        <img src="./assets/img/categories/s/3.jpg" class="img-responsive shine">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-2">
+                    <a href="#">
+                        <img src="./assets/img/categories/s/4.jpg" class="img-responsive shine">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-2">
+                    <a href="#">
+                        <img src="./assets/img/categories/s/5.jpg" class="img-responsive shine">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-lg-2">
+                    <a href="#">
+                        <img src="./assets/img/categories/s/6.jpg" class="img-responsive shine">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    <div id="sec-cat" class="ns-pd">
-        <div class="container-fluid">
+    <div id="sec-cat" class="ns-pd wow fadeIn">
+        <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-lg-3">
                     <img src="./assets/img/categories/i/nacional.jpg" class="img-responsive shdw-a">

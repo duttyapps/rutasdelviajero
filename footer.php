@@ -10,7 +10,7 @@ $social = new Social($db);
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <div class="banner-bottom ns-pd-2">
+            <div class="banner-bottom ns-pd-2 wow fadeIn">
                 <a href="<?php echo $banner['LINK']; ?>" target="<?php echo $banner['TARGET']; ?>">
                     <img src="./assets/img/publi/<?php echo $banner['ID']; ?>.jpg"
                          alt="<?php echo $banner['TITULO']; ?>" class="img-responsive">
@@ -19,17 +19,17 @@ $social = new Social($db);
         </div>
     </div>
 </div>
-<section id="footer">
+<section id="footer" class="wow fadeIn">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-lg-4">
+        <div class="row flex">
+            <div class="col-sm-12 col-lg-4 br">
                 <ul>
                     <li>Nosotros</li>
                     <li>Testimonios Clientes</li>
                     <li>Blog</li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-lg-4">
+            <div class="col-sm-12 col-lg-4 br">
                 <div id="social-section">
                     <div class="spn-1">
                         Síguenos en...
@@ -43,7 +43,7 @@ $social = new Social($db);
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-4">
+            <div class="col-sm-12 col-lg-4 br">
                 <div id="schedule-section">
                     <div class="spn-1">Atención Personalizada</div>
                     <div class="spn-2"><?php echo $commons->getEmail(); ?></div>
@@ -67,7 +67,7 @@ $social = new Social($db);
     </div>
     </div>
 </section>
-<div class="container copy">
+<div class="container copy wow fadeIn">
     <p class="text-center">&copy; <?php echo date('Y'); ?> RutasDelViajero, todos los derechos reservados.</p>
 </div>
 </body>
